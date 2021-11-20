@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bem vindo</title>
+<script th:src="@{/js/jquery.js}" type="text/javascript"></script>
+<script th:src="@{/js/mask.js}" type="text/javascript"></script>
+<script th:src="@{/js/font-awesome.js}" type="text/javascript"></script>
+<script th:src="@{/js/login.js}" type="text/javascript"></script>
+<script th:src="@{/bootstrap/bootstrap.bundle.min.js}"
+	type="text/javascript"></script>
+<link th:href="@{/bootstrap/bootstrap.css}" rel="stylesheet" />
+<link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+	<nav id="menu">
+		<ul>
+			<li><a th:href="@{quem-somos}">Quem Somos</a></li>
+			<li><a th:href="@{produto}">Sou uma empresa</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="box">
+
+			<div class="box-login text-center">
+				<div class="imagem_logo">
+					<img th:src="@{/images/logoColheita.jpeg}" width="200" height="200">
+				</div>
+
+				<div class="login">
+
+					<div class="row text-left">
+						<div class="col-6">
+							<label for="cnpj">CNPJ:</label> <input type="text" id="cnpj"
+								class="form-control" />
+						</div>
+
+					</div>
+					<div class="row text-left">
+						<div class="col-6">
+							<label for="senha">Senha:</label> <input type="password"
+								id="senha" class="form-control" />
+						</div>
+
+
+					</div>
+					<div class="row text-left">
+						<div class="col-sm">
+							<input type="button" class="form-control botaologar"
+								value="Entrar" onclick="logar()">
+						</div>
+					</div>
+
+				</div>
+				<br> <a href="/cadastro"><p>Este é meu primeiro acesso!</p></a>
+
+			</div>
+		</div>
+	</div>
+	<div class="flex-box container-box">
+		<div class="alert alert-danger alerta-centro" role="alert" id="alerta">Usuário
+			ou senha inválido.</div>
+	</div>
+
+	<footer>
+		<div class="rodape">
+			<div class="rod">
+				<p class="email">
+					<i class="far fa-envelope"></i> colheitadobem@gmail.com
+				</p>
+
+				<p class="endereco">
+					<i class="fas fa-map-marker-alt"></i> Av. Paulista, 1106, 7° andar
+					- SP, São Paulo
+				</p>
+			</div>
+			<div class="redes">
+				<div class="rod">
+
+					<h1>
+						<i class="fab fa-google-play"></i>
+					</h1>
+				</div>
+
+				<div class="rod">
+					<h1>
+						<i class="fab fa-apple"></i>
+					</h1>
+				</div>
+			</div>
+			<div class="redes1">
+				<div class="rod1">
+
+					<h1>
+						<i class="fab fa-facebook"></i>
+					</h1>
+				</div>
+
+				<div class="rod1">
+					<h1>
+						<i class="fab fa-instagram"></i>
+					</h1>
+				</div>
+				<div class="rod1">
+					<h1>
+						<i class="fab fa-twitter"></i>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
