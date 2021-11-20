@@ -1,1 +1,0 @@
-# GlobalSolutions_2021_EAD
